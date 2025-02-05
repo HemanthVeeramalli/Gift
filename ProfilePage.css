@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .profile-page-container {
+
+    max-width: 1499px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+ 
+.profile-page-content {
+    display: flex;
+    gap: 25px; 
+    padding-top: 10px;
+  }
+  
+  
+  .profile-sidebar {
+    width: 355px; 
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    
+  }
+  
+ 
+  .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    list-style: none; /* Removes dots */
+    
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-item.active {
+    background-color: #007bff; 
+    color: white;
+  }
+  
+  
+  .profile-content {
+    flex: 1 1;
+    padding: 21px;
+    background-color: #a594941f;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow for content */
+  }
+  
+  .menu {
+    list-style: none; /* Removes dots */
+    padding: 0;
+    margin: 0;
+  }
+  /* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .profile-page-container {
+      max-width: 95%;
+  }
+
+  .profile-sidebar {
+      width: 280px;
+  }
+
+  .profile-page-content {
+      gap: 15px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .profile-page-content {
+      flex-direction: column; /* Stack sidebar & content */
+      gap: 15px;
+  }
+
+  .profile-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+  }
+
+  .menu-item {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .profile-content {
+      padding: 15px;
+  }
+}
+
+/* Additional Adjustments for Smaller Phones */
+@media (max-width: 480px) {
+  .profile-page-container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .menu-item {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .profile-content {
+      padding: 10px;
+  }
+}
